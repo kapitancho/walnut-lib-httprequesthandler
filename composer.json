@@ -1,0 +1,26 @@
+{
+    "name": "walnut/lib_httprequesthandler",
+    "authors": [
+        {
+            "name": "Marian Kostadinov",
+            "email": "manchokapitancho@gmail.com"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+			"Walnut\\Lib\\HttpRequestHandler\\": "src/"
+		}
+	},
+	"require": {
+		"psr/log": ">=3.0.0",
+		"psr/http-message": ">=1.0.0",
+		"psr/http-server-middleware": ">=1.0.1",
+		"psr/http-server-handler": ">=1.0.1",
+		"psr/http-factory": ">=1.0.1",
+		"walnut/lib_httpcontroller": ">=0.0.1"
+	},
+	"require-dev": {
+		"vimeo/psalm": "^4.9.3",
+		"phpunit/phpunit": "^9.5.9"
+	}
+}
