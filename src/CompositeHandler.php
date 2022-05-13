@@ -13,8 +13,8 @@ final class CompositeHandler implements RequestHandlerInterface {
 	 * @param MiddlewareInterface[] $middlewares
 	 */
 	public function __construct(
-		private /*readonly*/ RequestHandlerInterface $defaultHandler,
-		private /*readonly*/ array $middlewares
+		private readonly RequestHandlerInterface $defaultHandler,
+		private readonly array $middlewares
 	) {}
 
 	public function handle(ServerRequestInterface $request): ResponseInterface {

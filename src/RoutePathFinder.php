@@ -14,8 +14,8 @@ final class RoutePathFinder implements MiddlewareInterface {
 	 * @param string $routeAttributeName
 	 */
 	public function __construct(
-		private /*readonly*/ array $availableRoutes,
-		private /*readonly*/ string $routeAttributeName = 'route'
+		private readonly array $availableRoutes,
+		private readonly string $routeAttributeName = 'route'
 	) {}
 
 	public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface {

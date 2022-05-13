@@ -18,10 +18,10 @@ final class LookupRouter implements MiddlewareInterface {
 	 * @param string $routeAttributeName
 	 */
 	public function __construct(
-		private /*readonly*/ ControllerHelper $controllerHelper,
-		private /*readonly*/ ContainerInterface $container,
-		private /*readonly*/ array $routerMapping,
-		private /*readonly*/ string $routeAttributeName = 'route'
+		private readonly ControllerHelper $controllerHelper,
+		private readonly ContainerInterface $container,
+		private readonly array $routerMapping,
+		private readonly string $routeAttributeName = 'route'
 	) {}
 
 	public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface {

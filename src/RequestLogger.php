@@ -11,7 +11,7 @@ use Psr\Log\LoggerInterface;
 final class RequestLogger implements MiddlewareInterface {
 
 	public function __construct(
-		private /*readonly*/ LoggerInterface $logger
+		private readonly LoggerInterface $logger
 	) {}
 
 	public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface {

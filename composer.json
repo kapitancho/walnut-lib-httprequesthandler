@@ -17,10 +17,10 @@
 		"psr/http-server-middleware": ">=1.0.1",
 		"psr/http-server-handler": ">=1.0.1",
 		"psr/http-factory": ">=1.0.1",
-		"walnut/lib_httpcontroller": ">=0.0.1"
+		"walnut/lib_httpcontroller": ">=0.0.2"
 	},
 	"require-dev": {
-		"vimeo/psalm": "^4.9.3",
-		"phpunit/phpunit": "^9.5.9"
+		"vimeo/psalm": "^4.23.0",
+		"phpunit/phpunit": "^9.5.20"
 	}
 }
