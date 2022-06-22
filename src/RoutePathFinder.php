@@ -10,7 +10,7 @@ use Psr\Http\Server\RequestHandlerInterface;
 final class RoutePathFinder implements MiddlewareInterface {
 
 	/**
-	 * @param array<class-string> $availableRoutes
+	 * @param array<string> $availableRoutes
 	 * @param string $routeAttributeName
 	 */
 	public function __construct(

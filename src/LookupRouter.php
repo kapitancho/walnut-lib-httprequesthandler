@@ -31,10 +31,11 @@ final class LookupRouter implements MiddlewareInterface {
 		 * @var RequestHandlerInterface|object
 		 */
 		$mappedHandler = $routeHandler ? $this->container->get($routeHandler) : $handler;
-		if ($mappedHandler instanceof RequestHandlerInterface) {
-			return $mappedHandler->handle($request);
-		}
-		return $this->controllerHelper->wire($request, $mappedHandler);
+
+		$next = $mappedHandler instanceof RequestHandlerInterface ?
+			$mappedHandler : $this->controllerHelper->wire($mappedHandler);
+
+		return $next->handle($request);
 	}
 
 }
