@@ -17,7 +17,7 @@
 		"psr/http-server-middleware": ">=1.0.1",
 		"psr/http-server-handler": ">=1.0.1",
 		"psr/http-factory": ">=1.0.1",
-		"walnut/lib_httpcontroller": ">=0.0.4",
+		"walnut/lib_httpcontroller": ">=0.0.6",
 		"walnut/lib_jsonserializer": ">=0.0.1"
 	},
 	"require-dev": {
