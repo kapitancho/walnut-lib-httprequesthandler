@@ -6,8 +6,11 @@ TODO
 ```php
 $requestHandler = new CompositeHandler(
     $notFoundHandler, [
+        $noCacheHandler,
+        $corsHandler,
         $requestLogger,
         $uncaughtExceptionHandler,
+        $controllerExceptionHandler,
         $routePathFinder,
         $lookupRouter
     ]
